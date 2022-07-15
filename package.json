@@ -1,0 +1,16 @@
+{
+  "name": "video-chat-app",
+  "version": "1.0.0",
+  "description": "Video Chat App with MERN Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "Md Kamruzzaman",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
