@@ -35,8 +35,8 @@
 #controls{
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform:translateX(-50%);
+    left: 40%;
+    transform:translateX(-40%);
     display: flex;
     gap: 1em;
 }
@@ -60,7 +60,19 @@
 #leave-btn{
     background-color: rgb(255,80,80, 1);
 }
-
+#call-btn{
+    background-color: green;
+}
+.callUser form {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.callUser input {
+    margin: 2px;
+    cursor: pointer;
+}
 /* Lobby Css */
 .lobby{
     background-color: #1a1a1a;

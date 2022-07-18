@@ -4,7 +4,7 @@ const {createServer} = require("http")
 const {Server} = require("socket.io")
 const cors = require("cors")
 const dotenv = require("dotenv").config()
-
+const {videoHandler} = require("./eventHandler/videoHandler")
 const PORT = process.env.PORT || 3500
 
 const app = express()
@@ -21,9 +21,7 @@ const io = new Server(httpServer, {
     }
 })
 
-io.on("connection", (socket) => {
-    console.log(`User Connected: ${socket.id}`)
-})
+io.on("connection", videoHandler)
 
 // Serving Frontend
 
